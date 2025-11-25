@@ -16,3 +16,4 @@ while numb == 1:
 		bus.write_byte(addr, 0x0) # switch it on
 	else:
 		numb = 0
+		bus.write_byte(addr, 0x0) # switch it off and terminate the program
