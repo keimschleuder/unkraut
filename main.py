@@ -1,5 +1,7 @@
 import argparse
 import gpiod
+import rpi_drivers.motor
+import rpi_drivers.plantnet
 
 # Console Arguments init
 parser = argparse.ArgumentParser(prog = "main.py", 
@@ -10,3 +12,7 @@ parser = argparse.ArgumentParser(prog = "main.py",
 
 # GPIO init
 chip = gpiod.Chip('gpiochip4')
+
+motor_drv = rpi_drivers.motor.Motor()
+
+plantnet_drv = rpi_drivers.plantnet.PlantNet()
