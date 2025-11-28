@@ -14,7 +14,7 @@
     "predictedOrgans": [
         {
             "image": "5f4fc005481544bc60ab1d72f4080083",
-            "filename": "./data/Bild2.png",
+            "filename": "C:\\Users\\nikla\\Documents\\GitHub\\unkraut\\plantnet_test\\Bild2.png",
             "organ": "habit",
             "score": 0.60252
         }
@@ -312,5 +312,5 @@
         }
     ],
     "version": "2025-08-08 (7.4)",
-    "remainingIdentificationRequests": 495
+    "remainingIdentificationRequests": 499
 }
