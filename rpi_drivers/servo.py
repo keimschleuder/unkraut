@@ -1,29 +1,26 @@
 import time
+from adafruit_servokit import ServoKit
 
-import board
-from adafruit_motor import servo
+kit = ServoKit(channels = 16)
 
-from adafruit_pca9685 import PCA9685
+class Servo:
+    def __init__(self, offset = 0):
+        self.servo0 = 0 + offset
+        self.servo1 = 1 + offset
+        self.servo2 = 2 + offset
+        self.servo3 = 3 + offset
 
-i2c = board.I2C()  # uses board.SCL and board.SDA
+    def goto(self, value0, value1, value2, value3):
+        kit.servo[self.servo0].angle = value0
+        kit.servo[self.servo1].angle = value1
+        kit.servo[self.servo2].angle = value2
+        kit.servo[self.servo3].angle = value3
 
-# Create a simple PCA9685 class instance.
-pca = PCA9685(i2c)
-# You can optionally provide a finer tuned reference clock speed to improve the accuracy of the
-# timing pulses. This calibration will be specific to each board and its environment. See the
-# calibration.py example in the PCA9685 driver.
-# pca = PCA9685(i2c, reference_clock_speed=25630710)
-pca.frequency = 50
+    def goto(self, servo, value):
+        kit.servo[servo].angle = value
 
-class ServoChannel():
-    def __init__(self, channel: int):
-        self.servo = servo.Servo(pca.channels[channel])
-
-    def set_angle(self, angle: int):
-        self.servo.angle = angle
-
-    def set_fraction(self, fraction: float):
-        self.servo.fraction = fraction
-
-    def terminate(self):
-        pca.deinit()
+    def reset(self):
+        kit.servo[self.servo0].angle = 90
+        kit.servo[self.servo1].angle = 90
+        kit.servo[self.servo2].angle = 90
+        kit.servo[self.servo3].angle = 90
