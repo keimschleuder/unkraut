@@ -28,3 +28,5 @@ class PlantNet:
 
         with open('latest_data.json', 'w', encoding='utf-8') as file:
             json.dump(json_result, file, ensure_ascii=False, indent=4)
+
+        return bestMatch
