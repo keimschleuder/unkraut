@@ -1,9 +1,10 @@
 import requests
 import json
-from pprint import pprint
 
 from .api_key import API_KEY   # Your API key here
 PROJECT = "all"; # You can choose a more specific flora, see: /docs/newfloras
+
+weeds = ["arabidopsis", "dionaea muscipula"]
 
 class PlantNet:
     def __init__(self):
@@ -30,7 +31,7 @@ class PlantNet:
         response = s.send(prepared)
         json_result = json.loads(response.text)
 
-        bestMatch = json_result['bestMatch']
+        bestMatch = json_result.get('bestMatch')
 
         with open('latest_data.json', 'w', encoding='utf-8') as file:
             json.dump(json_result, file, ensure_ascii=False, indent=4)

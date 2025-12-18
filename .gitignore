@@ -1,4 +1,7 @@
 rpi_drivers/api_key.py
 */__pycache__/*
 *.pyc
-plantnet_test/plantnet-api-test.py
+Helpful/plantnet_test/plantnet-api-test.py
+Helpful/plantnet_test/latest_data.json
+Helpful/plantnet_test/Bild2.png
+Helpful/plantnet_test/Bild1.png

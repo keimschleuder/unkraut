@@ -21,12 +21,25 @@ plantnet_drv = rpi_drivers.plantnet.PlantNet()
 
 roboterarm = rpi_drivers.servo.Servo()
 
+def find_weeds(bestMatches):
+    weeds_found = []
+    for i, match in enumerate(bestMatches):
+        if match is not None:
+            for weed in rpi_drivers.plantnet.weeds:
+                if match.lower().find(weed) != -1:
+                    weeds_found.append([weed, i])
+    return weeds_found
+
+def treat_weeds(weeds_found):
+    for weed, quadrant in weeds_found:
+        print(f"Weed '{weed}' found in quadrant {quadrant + 1}. Treating...")  
+
 # Start Camera
 picam2 = Picamera2()
 picam2.start()
 time.sleep(1)
 
-while True:
+for i in range(5):
     data = io.BytesIO()
     picam2.capture_file(data, format='jpeg')
 
@@ -58,6 +71,9 @@ while True:
     print("Saved quadrants.")
     '''
 
-    print(plantnet_drv.send_multiple_requests(quadrants))
-
-    break
+    bestMatches = plantnet_drv.send_multiple_requests(quadrants)
+    weeds_found = find_weeds(bestMatches)
+    if len(weeds_found) > 0:
+        treat_weeds(weeds_found)
+    else:
+        print("No weeds found in this capture.")
