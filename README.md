@@ -30,7 +30,7 @@ Wir verwendeten folgende Produkte:
 
 ## Schaltplan 
 
-![Schaltplan](./schaltplan.png)
+![Schaltplan](/Dokumentation/schaltplan.png)
 
 ## Rebuild the Projekt
 
