@@ -15,6 +15,7 @@ parser = argparse.ArgumentParser(prog = "main.py",
                                  epilog = "Program written for the german Jugend Forscht-Competition by Niklas Keim", 
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
+# Driver init
 motor_drv = rpi_drivers.motor.Motor()
 
 plantnet_drv = rpi_drivers.plantnet.PlantNet()
