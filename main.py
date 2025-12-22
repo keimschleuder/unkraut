@@ -22,6 +22,7 @@ plantnet_drv = rpi_drivers.plantnet.PlantNet()
 roboterarm = rpi_drivers.servo.Servo()
 
 def find_weeds(bestMatches):
+    # Evaluate whether a crop is a weed based on a list in the plantnet software driver
     weeds_found = []
     for i, match in enumerate(bestMatches):
         if match is not None:
@@ -31,6 +32,7 @@ def find_weeds(bestMatches):
     return weeds_found
 
 def treat_weeds(weeds_found):
+    # TODO: Steer the Arm
     for weed, quadrant in weeds_found:
         print(f"Weed '{weed}' found in quadrant {quadrant + 1}. Treating...")  
 
@@ -41,6 +43,7 @@ def main():
     time.sleep(1)
 
     for i in range(5):
+        # Read image
         data = io.BytesIO()
         picam2.capture_file(data, format='jpeg')
 
@@ -49,12 +52,12 @@ def main():
         w, h = img.size
         mx, my = w // 2, h // 2
 
+        # Split into quadrants
         q1 = img.crop((0, 0, mx, my))       # top-left
         q2 = img.crop((mx, 0, w, my))       # top-right
         q3 = img.crop((0, my, mx, h))       # bottom-left
         q4 = img.crop((mx, my, w, h))       # bottom-right
 
-        # Optionally store quadrants as in-memory JPEGs for further processing
         quadrants = []
         for q in (q1, q2, q3, q4):
             buf = io.BytesIO()
@@ -72,6 +75,7 @@ def main():
         print("Saved quadrants.")
         '''
 
+        # Send the quadrants to the API and process the results
         bestMatches = plantnet_drv.send_multiple_requests(quadrants)
         weeds_found = find_weeds(bestMatches)
         if len(weeds_found) > 0:
