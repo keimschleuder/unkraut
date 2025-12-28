@@ -1,31 +1,28 @@
 #include <Wire.h>
 
 #define MOTOR_PIN 2
-#define PUMP_PIN 3
+#define PUMP_PIN 10
 
 byte RxByte;
-bool valueMotor;
-bool valuePump;
+bool valueMotor = false;
+bool valuePump = false;
 
 void I2C_RxHandler(int numBytes)
 {
   while(Wire.available()) {  // Read Any Received Data
-    valueMotor = false;
-    valuePump = false;
     RxByte = Wire.read();
 
-    if (RxByte == 0x01) {
-      valueMotor = true;
-    } else if (RxByte == 0x10) {
-      valuePump = true;
-    } else if (RxByte == 0x11) {
-      valueMotor = true;
-      valuePump = true;
-    }
+    valueMotor = RxByte & 0x01;
+    valuePump = RxByte & 0x02;
+    
+    // Debugging
+    Serial.println("Motor "); Serial.println(valueMotor);
+    Serial.println("Pump "); Serial.println(valuePump);
   }
 }
 
 void setup() {
+  Serial.begin(9600);
   pinMode(MOTOR_PIN, OUTPUT);
   Wire.begin(0x2f);
   Wire.onReceive(I2C_RxHandler);
