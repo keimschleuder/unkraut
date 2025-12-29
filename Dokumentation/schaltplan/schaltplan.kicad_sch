@@ -3638,6 +3638,12 @@
 		(uuid "47bd1b8f-21f5-4201-93ed-0d638c6428f6")
 	)
 	(junction
+		(at 173.99 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f51a870-830e-4238-88e0-ed72d3866215")
+	)
+	(junction
 		(at 80.01 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3660,6 +3666,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7050f8e5-dd84-47b7-b7dc-4e951b4cb9f8")
+	)
+	(junction
+		(at 177.8 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d9a79bd-dc8d-43ee-a826-dbb648f24f6e")
+	)
+	(junction
+		(at 194.31 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8777aaaf-e9ec-46d3-bbd3-a6d9cc6c9aa7")
 	)
 	(junction
 		(at 52.07 156.21)
@@ -3841,6 +3859,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 88.9) (xy 194.31 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24005217-973c-4945-8f62-98e7858236af")
+	)
+	(wire
+		(pts
 			(xy 91.44 125.73) (xy 91.44 158.75)
 		)
 		(stroke
@@ -3858,6 +3886,26 @@
 			(type default)
 		)
 		(uuid "2b016146-46b1-48bb-a8be-dd26a64a0beb")
+	)
+	(wire
+		(pts
+			(xy 205.74 64.77) (xy 198.12 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cd96502-04e3-4833-95f2-0a8a0ab1ab55")
+	)
+	(wire
+		(pts
+			(xy 173.99 64.77) (xy 173.99 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31dbc2b4-3497-4c9c-b61d-c0f2e00fd88d")
 	)
 	(wire
 		(pts
@@ -3901,6 +3949,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 40.64) (xy 205.74 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b38c489-31da-49db-a3ee-b4dd1f44b0f9")
+	)
+	(wire
+		(pts
 			(xy 91.44 30.48) (xy 91.44 19.05)
 		)
 		(stroke
@@ -3908,6 +3966,16 @@
 			(type default)
 		)
 		(uuid "3e8295a6-399a-4ee7-9941-dd7b343af036")
+	)
+	(wire
+		(pts
+			(xy 198.12 77.47) (xy 200.66 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47fddeb0-d986-45c2-af3e-abb4da312928")
 	)
 	(wire
 		(pts
@@ -3951,6 +4019,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 77.47) (xy 200.66 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e93c31b-f1e2-4cc4-9e69-46f82783ec31")
+	)
+	(wire
+		(pts
 			(xy 26.67 162.56) (xy 26.67 156.21)
 		)
 		(stroke
@@ -3968,6 +4046,16 @@
 			(type default)
 		)
 		(uuid "530e34cd-461f-429d-a66c-58bf506b90c7")
+	)
+	(wire
+		(pts
+			(xy 194.31 139.7) (xy 102.87 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53d32caf-550c-4261-9b6d-6290e1d8f871")
 	)
 	(wire
 		(pts
@@ -4081,7 +4169,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 38.1) (xy 173.99 82.55)
+			(xy 173.99 38.1) (xy 173.99 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4121,13 +4209,23 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 139.7) (xy 102.87 139.7)
+			(xy 203.2 139.7) (xy 194.31 139.7)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7e878024-ee42-463f-967e-d5c65424cb41")
+	)
+	(wire
+		(pts
+			(xy 194.31 114.3) (xy 194.31 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83b03c85-ba77-48c0-addf-87b5c9eda039")
 	)
 	(wire
 		(pts
@@ -4191,6 +4289,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 74.93) (xy 182.88 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "908f5765-89d1-45d4-b5c3-329546da5f98")
+	)
+	(wire
+		(pts
 			(xy 91.44 19.05) (xy 127 19.05)
 		)
 		(stroke
@@ -4208,6 +4316,16 @@
 			(type default)
 		)
 		(uuid "a1acf9ad-2174-488a-81cc-3f618c2e12f9")
+	)
+	(wire
+		(pts
+			(xy 177.8 74.93) (xy 177.8 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a274838c-ed80-4635-99e1-46bcf576e622")
 	)
 	(wire
 		(pts
@@ -4371,13 +4489,23 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 152.4) (xy 177.8 48.26)
+			(xy 177.8 152.4) (xy 177.8 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d3d6910a-cc81-49db-b055-25c9310b4229")
+	)
+	(wire
+		(pts
+			(xy 173.99 64.77) (xy 182.88 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d77a4d0c-f094-4968-9af3-885f48ace0fa")
 	)
 	(wire
 		(pts
@@ -4471,6 +4599,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 88.9) (xy 194.31 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eba4a937-ed60-432e-b120-11b96aeef2ca")
+	)
+	(wire
+		(pts
 			(xy 80.01 152.4) (xy 80.01 162.56)
 		)
 		(stroke
@@ -4508,6 +4646,16 @@
 			(type default)
 		)
 		(uuid "f33fb59a-aebc-44d4-830d-7fed10a78af4")
+	)
+	(wire
+		(pts
+			(xy 205.74 40.64) (xy 205.74 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6be0c9b-f193-4f80-b50f-ae82c22ee97b")
 	)
 	(wire
 		(pts
@@ -4628,7 +4776,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Arduino_Nano_Every"
+		(property "Value" "Arduino Nano"
 			(at 226.9333 78.74 0)
 			(effects
 				(font
@@ -4759,6 +4907,75 @@
 			(project ""
 				(path "/694aaae0-ad2c-460c-9678-2414c5b03915"
 					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Motor_DC")
+		(at 194.31 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "18071a78-6e68-4673-85d6-73fed6b4330b")
+		(property "Reference" "M6"
+			(at 186.182 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Pumpe"
+			(at 182.88 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC Motor"
+			(at 194.31 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db8edfb1-870b-49d8-b12e-eedbd05fe8c1")
+		)
+		(pin "2"
+			(uuid "1f1f9c06-4bb3-4141-baae-a910bc840090")
+		)
+		(instances
+			(project ""
+				(path "/694aaae0-ad2c-460c-9678-2414c5b03915"
+					(reference "M6")
 					(unit 1)
 				)
 			)
@@ -4977,7 +5194,7 @@
 				)
 			)
 		)
-		(property "Value" "Raspberry_Pi_5"
+		(property "Value" "RaspberryPi 5"
 			(at 55.88 22.86 0)
 			(effects
 				(font
@@ -5235,7 +5452,7 @@
 				)
 			)
 		)
-		(property "Value" "6V Battery"
+		(property "Value" "6V Batterie"
 			(at 28.6385 134.62 90)
 			(effects
 				(font
@@ -5280,6 +5497,83 @@
 			(project ""
 				(path "/694aaae0-ad2c-460c-9678-2414c5b03915"
 					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay:FINDER-40.41")
+		(at 190.5 69.85 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "873e24d8-6c90-47c5-9ae4-758fda5b91e9")
+		(property "Reference" "K2"
+			(at 190.5 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Pumpe-Relais"
+			(at 190.5 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_Finder_40.41"
+			(at 189.484 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.finder-relais.net/de/finder-relais-serie-40.pdf"
+			(at 190.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB SPDT relay, 10A"
+			(at 190.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A1"
+			(uuid "d7876030-d67c-449b-8704-276f8c2ee3bc")
+		)
+		(pin "A2"
+			(uuid "5b1539d1-0bcf-40d1-a77c-d2236ef1008c")
+		)
+		(pin "12"
+			(uuid "e8fd646f-8da1-4bdb-b5da-9d19d114bb9b")
+		)
+		(pin "11"
+			(uuid "4f9f7631-fac1-4e8b-86ac-949d899f9b44")
+		)
+		(pin "14"
+			(uuid "a83e6149-0957-4bee-8138-1ae2b9583171")
+		)
+		(instances
+			(project ""
+				(path "/694aaae0-ad2c-460c-9678-2414c5b03915"
+					(reference "K2")
 					(unit 1)
 				)
 			)
@@ -5377,7 +5671,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Motor_DC"
+		(property "Value" "Hauptmotor"
 			(at 208.28 110.4899 0)
 			(effects
 				(font
@@ -5592,7 +5886,7 @@
 				)
 			)
 		)
-		(property "Value" "PCA9685 as Servo Driver"
+		(property "Value" "PCA9685 als Servo Driver"
 			(at 107.95 104.0698 90)
 			(effects
 				(font
@@ -5739,7 +6033,7 @@
 				)
 			)
 		)
-		(property "Value" "Relais"
+		(property "Value" "Hauptmotor-Relais"
 			(at 190.5 30.48 90)
 			(effects
 				(font
