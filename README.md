@@ -1,6 +1,6 @@
 # Jugend Forscht Unkrautvernichtungsroboter
 
-Wir sind eine Gruppe von 4 Schülern aus HEssen (Deutschland). Wir haben im Rahmen einer Schul-Arbeitsgemeinschaft ein Projekt für den Wettbewerb [Jugend Forscht](https://www.jugend-forscht.de/) erarbeitet. 
+Wir sind eine Gruppe von 4 Schülern aus Hessen (Deutschland). Wir haben im Rahmen einer Schul-Arbeitsgemeinschaft ein Projekt für den Wettbewerb [Jugend Forscht](https://www.jugend-forscht.de/) erarbeitet. 
 
 ## Das Projekt
 

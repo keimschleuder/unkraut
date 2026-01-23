@@ -33,9 +33,25 @@ def find_weeds(bestMatches):
     return weeds_found
 
 def treat_weeds(weeds_found):
-    # TODO: Steer the Arm
     for weed, quadrant in weeds_found:
-        print(f"Weed '{weed}' found in quadrant {quadrant + 1}. Treating...")  
+        print(f"Weed '{weed}' found in quadrant {quadrant + 1}. Treating...")
+        match quadrant:
+            case 0:
+                roboterarm.goto(0, 45)
+                roboterarm.goto(1, 135)
+            case 1:
+                roboterarm.goto(0, 135)
+                roboterarm.goto(1, 135)
+            case 2:
+                roboterarm.goto(0, 45)
+                roboterarm.goto(1, 90)
+            case 3:
+                roboterarm.goto(0, 135)
+                roboterarm.goto(1, 90)
+        
+        arduino_drv.pump(True)
+        time.sleep(5)
+        arduino_drv.pump(False)
 
 def main():
     # Start Camera
@@ -84,5 +100,9 @@ def main():
             print("All weeds treated")
         else:
             print("No weeds found in this capture.")
+
+        arduino_drv.motor(True)
+        time.sleep(1)
+        arduino_drv.motor(False)
 
 main()

@@ -11,7 +11,7 @@ class Servo:
         self.servo3 = 3 + offset
         self.offset = offset
 
-    def goto(self, value0, value1, value2, value3):
+    def allGoto(self, value0, value1, value2, value3):
         kit.servo[self.servo0].angle = value0
         kit.servo[self.servo1].angle = value1
         kit.servo[self.servo2].angle = value2
